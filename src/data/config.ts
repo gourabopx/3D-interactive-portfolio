@@ -31,7 +31,7 @@ const config = {
     "Azure",
   ],
   author: "Gourab Mullick",
-  email: "gourabmullick@gmail.com",
+  email: "gourabmullick200@gmail.com",
   site: "https://gourabmullick.com",
 
   get ogImg() {
@@ -40,7 +40,7 @@ const config = {
   social: {
     twitter: "https://x.com/gourab_mullick/",
     linkedin: "https://www.linkedin.com/in/gourab-mullick/",
-    instagram: "https://www.instagram.com/gourab_mullick/",
+    instagram: "https://www.instagram.com/gourab_op_84/",
     facebook: "https://www.facebook.com/gourab.mullick",
     github: "https://github.com/gourabmullick/",
   },
