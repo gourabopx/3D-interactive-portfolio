@@ -1,16 +1,16 @@
 const config = {
-  title: "Abhijit Zende | DevOps Enthusiast",
+  title: "Gourab Mullick | DevOps Enthusiast",
   description: {
-    long: "Explore the portfolio of Abhijit, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
+    long: "Explore the portfolio of Gourab, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
     short:
-      "Discover the portfolio of Abhijit, a DevOps enthusiast solving real life problems in DevOps and Development.",
+      "Discover the portfolio of Gourab, a DevOps enthusiast solving real life problems in DevOps and Development.",
   },
   keywords: [
-    "Abhijit",
-    "Abhijit Zende",
-    "abhijitzende",
-    "abhijitzende.com",
-    "Abhijit Zende portfolio",
+    "Gourab",
+    "Gourab Mullick",
+    "gourabmullick",
+    "gourabmullick.com",
+    "Gourab Mullick portfolio",
     "portfolio",
     "DevOps",
     "Devlopment",
@@ -30,9 +30,9 @@ const config = {
     "AIOps",
     "Azure",
   ],
-  author: "Abhijit Zende",
-  email: "abhijitzende75@gmail.com",
-  site: "https://abhijitzende.com",
+  author: "Gourab Mullick",
+  email: "gourabmullick75@gmail.com",
+  site: "https://gourabmullick.com",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
