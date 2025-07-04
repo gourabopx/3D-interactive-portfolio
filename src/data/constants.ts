@@ -2,7 +2,7 @@
 export enum SkillNames {
   AWS = "aws",
   // AZURE = "azure",    // +
-  // LINUX = "linux",    
+  LINUX = "linux",    
   // SHELL = "shell",    // +
   // PYTHON = "python",  // +
   GIT = "git",
@@ -26,20 +26,19 @@ export enum SkillNames {
   POSTGRES = "postgres",
   TS = "ts",         //
   REACT = "react",   //
-  VITE = "vite",     //
+  VUE = "vue",       //
   NEXTJS = "nextjs", //
   TAILWIND = "tailwind",  //
   NODEJS = "nodejs",  //
   EXPRESS = "express",  // 
   MONGODB = "mongodb",  //
-  MYSQL = "mysql",   //
   GITHUB = "github",   //
+  PRETTIER = "prettier",  //
   NPM = "npm",       //
   FIREBASE = "firebase",  //
   WORDPRESS = "wordpress",  //
   NGINX = "nginx",      //
-  RENDER = "render",    //
-  PHP = "php",         //
+  VIM = "vim",           //
   VERCEL = "vercel",    //
 }
 export type Skill = {
@@ -93,9 +92,9 @@ using use = useUsing("use")`,
     color: "#61dafb",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
-  [SkillNames.VITE]: {
+  [SkillNames.VUE]: {
     id: 6,
-    name: "vite",
+    name: "vue",
     label: "Vite",
     shortDescription:
       "blazing fast dev server that makes builds go brrrr! ⚡🔥",
@@ -151,14 +150,7 @@ using use = useUsing("use")`,
     color: "#336791",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
-  [SkillNames.MYSQL]: {
-    id: 25,
-    name: "mysql",
-    label: "MySQL",
-    shortDescription: "the reliable database that never quits, period! 🐬💾",
-    color: "#4479a1",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-  },
+
   [SkillNames.GIT]: {
     id: 13,
     name: "git",
@@ -175,13 +167,13 @@ using use = useUsing("use")`,
     color: "#000000",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
-  [SkillNames.RENDER]: {
+  [SkillNames.PRETTIER]: {
     id: 15,
-    name: "render",
-    label: "Render",
-    shortDescription: "cloud deployment made simple, no cap! ☁️🚀",
-    color: "#46e3b7",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/render/render-original.svg",
+    name: "prettier",
+    label: "MySQL",
+    shortDescription: "the reliable database that never quits, period! 🐬�",
+    color: "#4479a1",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
   [SkillNames.NPM]: {
     id: 16,
@@ -208,7 +200,14 @@ using use = useUsing("use")`,
     color: "#007acc",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
   },
-
+  [SkillNames.LINUX]: {
+    id: 19,
+    name: "linux",
+    label: "Render",
+    shortDescription: "cloud deployment made simple, no cap! ☁️🚀",
+    color: "#46e3b7",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/render/render-original.svg",
+  },
   [SkillNames.DOCKER]: {
     id: 20,
     name: "docker",
@@ -234,9 +233,9 @@ using use = useUsing("use")`,
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg",
   },
-  [SkillNames.PHP]: {
+  [SkillNames.VIM]: {
     id: 23,
-    name: "php",
+    name: "vim",
     label: "PHP",
     shortDescription: "server-side scripting that just works, no cap! 🐘💻",
     color: "#777bb4",
