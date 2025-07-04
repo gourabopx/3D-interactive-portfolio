@@ -2,7 +2,7 @@
 export enum SkillNames {
   AWS = "aws",
   // AZURE = "azure",    // +
-  LINUX = "linux",    
+  // LINUX = "linux",    
   // SHELL = "shell",    // +
   // PYTHON = "python",  // +
   GIT = "git",
@@ -26,19 +26,20 @@ export enum SkillNames {
   POSTGRES = "postgres",
   TS = "ts",         //
   REACT = "react",   //
-  VUE = "vue",       //
+  VITE = "vite",     //
   NEXTJS = "nextjs", //
   TAILWIND = "tailwind",  //
   NODEJS = "nodejs",  //
   EXPRESS = "express",  // 
   MONGODB = "mongodb",  //
+  MYSQL = "mysql",   //
   GITHUB = "github",   //
-  PRETTIER = "prettier",  //
   NPM = "npm",       //
   FIREBASE = "firebase",  //
   WORDPRESS = "wordpress",  //
   NGINX = "nginx",      //
-  VIM = "vim",           //
+  RENDER = "render",    //
+  PHP = "php",         //
   VERCEL = "vercel",    //
 }
 export type Skill = {
@@ -92,14 +93,14 @@ using use = useUsing("use")`,
     color: "#61dafb",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
-  [SkillNames.VUE]: {
+  [SkillNames.VITE]: {
     id: 6,
-    name: "vue",
-    label: "Vue",
+    name: "vite",
+    label: "Vite",
     shortDescription:
-      "the chill pill for your frontend, it hits different! 🟢😌",
-    color: "#41b883",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+      "blazing fast dev server that makes builds go brrrr! ⚡�",
+    color: "#646cff",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
   },
   [SkillNames.NEXTJS]: {
     id: 7,
@@ -150,6 +151,14 @@ using use = useUsing("use")`,
     color: "#336791",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
+  [SkillNames.MYSQL]: {
+    id: 25,
+    name: "mysql",
+    label: "MySQL",
+    shortDescription: "the reliable database that never quits, period! 🐬💾",
+    color: "#4479a1",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
   [SkillNames.GIT]: {
     id: 13,
     name: "git",
@@ -166,13 +175,13 @@ using use = useUsing("use")`,
     color: "#000000",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
-  [SkillNames.PRETTIER]: {
+  [SkillNames.RENDER]: {
     id: 15,
-    name: "prettier",
-    label: "Prettier",
-    shortDescription: "making your code not a whole mess, thank u next 🧹✨",
-    color: "#f7b93a",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prettier/prettier-original.svg",
+    name: "render",
+    label: "Render",
+    shortDescription: "cloud deployment made simple, no cap! ☁️🚀",
+    color: "#46e3b7",
+    icon: "https://render.com/favicon.ico",
   },
   [SkillNames.NPM]: {
     id: 16,
