@@ -1,5 +1,5 @@
 const config = {
-  title: "Abhijit Zende | DevOps Enthusiast",
+  title: "Gourab Mullick | DevOps Enthusiast",
   description: {
     long: "Explore the portfolio of Abhijit, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
     short:
@@ -30,7 +30,7 @@ const config = {
     "AIOps",
     "Azure",
   ],
-  author: "Abhijit Zende",
+  author: "Gourab Mullick",
   email: "abhijitzende75@gmail.com",
   site: "https://abhijitzende.com",
 
