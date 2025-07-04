@@ -22,6 +22,7 @@ const ContactForm = () => {
     e.preventDefault();
     setLoading(true);
     try {
+      console.log("Submitting contact form...");
       const res = await fetch("/api/send", {
         method: "POST",
         headers: {
@@ -33,26 +34,38 @@ const ContactForm = () => {
           message,
         }),
       });
+      
       const data = await res.json();
-      if (data.error) throw new Error(data.error);
+      console.log("API response:", data);
+      
+      if (!res.ok) {
+        throw new Error(data.error || `HTTP ${res.status}: ${res.statusText}`);
+      }
+      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
       toast({
         title: "Thank you!",
         description: "I'll get back to you as soon as possible.",
         variant: "default",
         className: cn("top-0 mx-auto flex fixed md:top-4 md:right-4"),
       });
-      setLoading(false);
+      
       setFullName("");
       setEmail("");
       setMessage("");
+      
       const timer = setTimeout(() => {
         router.push("/");
         clearTimeout(timer);
       }, 1000);
-    } catch (err) {
+    } catch (err: any) {
+      console.error("Contact form error:", err);
       toast({
-        title: "Error",
-        description: "Something went wrong! Please check the fields.",
+        title: "Error sending message",
+        description: err.message || "Something went wrong! Please try again or contact me directly.",
         className: cn(
           "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
         ),
