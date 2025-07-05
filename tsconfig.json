@@ -12,6 +12,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "types": [
+      "next",
+      "next/image-types/global",
+      "node",
+      "react",
+      "react-dom",
+      "react-icons"
+    ],
     "plugins": [
       {
         "name": "next"
