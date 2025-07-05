@@ -13,6 +13,7 @@ import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
+import TechOrbit from "@/components/tech-orbit";
 
 const HeroSection = () => {
   const { isLoading } = usePreloader();
@@ -132,7 +133,14 @@ const HeroSection = () => {
             </>
           )}
         </div>
-        <div className="grid col-span-1"></div>
+        <div
+          className={cn(
+            "col-span-1 flex items-center justify-center relative",
+            "pointer-events-auto"
+          )}
+        >
+          <TechOrbit />
+        </div>
       </div>
       <div className="absolute bottom-10 left-[50%] translate-x-[-50%]">
         <ScrollDownIcon />
