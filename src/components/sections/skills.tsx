@@ -4,7 +4,7 @@ import { BoxReveal } from "../reveal-animations";
 import { cn } from "@/lib/utils";
 import TechOrbit from "../tech-orbit";
 
-const SkillsSection = () => {
+const SkillsSection: React.FC = () => {
   return (
     <section id="skills" className="w-full h-screen md:h-[150dvh] flex flex-col">
       <div className="top-[70px] sticky mb-96">

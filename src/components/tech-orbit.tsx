@@ -78,7 +78,7 @@ interface TechOrbitProps {
   centerContent?: React.ReactNode;
 }
 
-const TechOrbit = ({ centerContent }: TechOrbitProps) => {
+const TechOrbit: React.FC<TechOrbitProps> = ({ centerContent }: TechOrbitProps) => {
   const [activeTech, setActiveTech] = useState<TechInfo | null>(null);
 
   // Pre-compute icon positions so they stay immutable across renders
