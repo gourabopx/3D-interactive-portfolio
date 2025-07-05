@@ -139,7 +139,18 @@ const HeroSection = () => {
             "pointer-events-auto"
           )}
         >
-          <TechOrbit />
+          <TechOrbit
+            centerContent={
+              <div className="text-center">
+                <h2 className="font-display font-bold text-4xl md:text-6xl text-slate-800 dark:text-slate-100 leading-tight">
+                  Gourab <br /> Mullick
+                </h2>
+                <p className="mt-2 text-sm md:text-base font-light text-slate-500 dark:text-slate-400">
+                  Full Stack Dev + DevOps Enthusiast
+                </p>
+              </div>
+            }
+          />
         </div>
       </div>
       <div className="absolute bottom-10 left-[50%] translate-x-[-50%]">
