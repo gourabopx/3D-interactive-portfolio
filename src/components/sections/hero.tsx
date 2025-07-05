@@ -13,14 +13,13 @@ import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
-import TechOrbit from "@/components/tech-orbit";
 
 const HeroSection = () => {
   const { isLoading } = usePreloader();
 
   return (
     <section id="hero" className={cn("relative w-full h-screen")}>
-      <div className="grid md:grid-cols-2">
+      <div className="flex flex-col">
         <div
           className={cn(
             "h-[calc(100dvh-3rem)] md:h-[calc(100dvh-4rem)] z-[2]",
@@ -132,25 +131,6 @@ const HeroSection = () => {
               </div>
             </>
           )}
-        </div>
-        <div
-          className={cn(
-            "col-span-1 flex items-center justify-center relative",
-            "pointer-events-auto"
-          )}
-        >
-          <TechOrbit
-            centerContent={
-              <div className="text-center">
-                <h2 className="font-display font-bold text-4xl md:text-6xl text-slate-800 dark:text-slate-100 leading-tight">
-                  Gourab <br /> Mullick
-                </h2>
-                <p className="mt-2 text-sm md:text-base font-light text-slate-500 dark:text-slate-400">
-                  Full Stack Dev + DevOps Enthusiast
-                </p>
-              </div>
-            }
-          />
         </div>
       </div>
       <div className="absolute bottom-10 left-[50%] translate-x-[-50%]">
