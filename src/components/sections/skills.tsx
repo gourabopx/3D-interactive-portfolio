@@ -2,10 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { BoxReveal } from "../reveal-animations";
 import { cn } from "@/lib/utils";
+import TechOrbit from "../tech-orbit";
 
-const SkillsSection = () => {
+const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="w-full h-screen md:h-[150dvh]">
+    <section id="skills" className="w-full h-screen md:h-[150dvh] flex flex-col">
       <div className="top-[70px] sticky mb-96">
         <Link href={"#skills"}>
           <BoxReveal width="100%">
@@ -21,8 +22,12 @@ const SkillsSection = () => {
           </BoxReveal>
         </Link>
         <p className="mx-auto mt-4 line-clamp-4 max-w-3xl font-normal text-base text-center text-neutral-300">
-          (hint: press a key)
+          (hint: press a key or tap an icon)
         </p>
+      </div>
+
+      <div className="flex-1 flex items-center justify-center relative py-20">
+        <TechOrbit centerContent={null} />
       </div>
     </section>
   );

@@ -70,7 +70,15 @@ const TECHS: TechInfo[] = [
 // Radius of the orbit in pixels
 const ORBIT_RADIUS = 180;
 
-const TechOrbit: React.FC = () => {
+interface TechOrbitProps {
+  /**
+   * React node rendered in the middle of the orbit. When not provided, a
+   * default heading with the author name and subtitle is shown.
+   */
+  centerContent?: React.ReactNode;
+}
+
+const TechOrbit: React.FC<TechOrbitProps> = ({ centerContent }: TechOrbitProps) => {
   const [activeTech, setActiveTech] = useState<TechInfo | null>(null);
 
   // Pre-compute icon positions so they stay immutable across renders
@@ -85,15 +93,19 @@ const TechOrbit: React.FC = () => {
 
   return (
     <div className="relative w-full h-full flex items-center justify-center select-none">
-      {/* Centre heading */}
-      <div className="text-center pointer-events-none">
-        <h2 className="font-display font-bold text-4xl md:text-6xl text-slate-800 dark:text-slate-100 leading-tight">
-          Gourab <br /> Mullick
-        </h2>
-        <p className="mt-2 text-sm md:text-base font-light text-slate-500 dark:text-slate-400">
-          Full Stack Dev + DevOps Enthusiast
-        </p>
-      </div>
+      {/* Center content */}
+      {centerContent !== undefined ? (
+        <div className="pointer-events-none">{centerContent}</div>
+      ) : (
+        <div className="text-center pointer-events-none">
+          <h2 className="font-display font-bold text-4xl md:text-6xl text-slate-800 dark:text-slate-100 leading-tight">
+            Gourab <br /> Mullick
+          </h2>
+          <p className="mt-2 text-sm md:text-base font-light text-slate-500 dark:text-slate-400">
+            Full Stack Dev + DevOps Enthusiast
+          </p>
+        </div>
+      )}
 
       {/* Spinning orbit with icons */}
       <div className="absolute inset-0 flex items-center justify-center animate-spin-slow" style={{ perspective: "800px" }}>
