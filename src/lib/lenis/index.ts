@@ -1,4 +1,4 @@
 // libs/lenis.js
 "use client";
 
-export * from "lenis/react";
+export * from "lenis/dist/lenis-react";
