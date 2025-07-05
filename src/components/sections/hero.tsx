@@ -136,7 +136,7 @@ const HeroSection = () => {
         <div
           className={cn(
             "col-span-1 flex items-center justify-center relative",
-            "pointer-events-auto"
+            "pointer-events-auto z-[2]"
           )}
         >
           <TechOrbit />
